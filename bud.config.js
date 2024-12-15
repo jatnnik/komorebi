@@ -16,14 +16,14 @@ export default async (app) => {
   app
     .entry('app', ['@scripts/app', '@styles/app'])
     .entry('editor', ['@scripts/editor', '@styles/editor'])
-    .assets(['images']);
+    .assets(['images'])
 
   /**
    * Set public path
    *
    * @see {@link https://bud.js.org/reference/bud.setPublicPath}
    */
-  app.setPublicPath('/app/themes/sage/public/');
+  app.setPublicPath('/app/themes/sage/public/')
 
   /**
    * Development server settings
@@ -35,7 +35,7 @@ export default async (app) => {
   app
     .setUrl('http://localhost:3000')
     .setProxyUrl('http://localhost:8888')
-    .watch(['resources/views', 'app']);
+    .watch(['resources/views', 'app'])
 
   /**
    * Generate WordPress `theme.json`
@@ -76,5 +76,10 @@ export default async (app) => {
     })
     .useTailwindColors()
     .useTailwindFontFamily()
-    .useTailwindFontSize();
-};
+    .useTailwindFontSize()
+
+  /**
+   * Enable type checking
+   */
+  app.typescript.typecheck.enable()
+}

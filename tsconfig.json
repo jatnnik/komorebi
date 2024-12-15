@@ -1,6 +1,3 @@
 {
-  "extends": "@roots/bud-typescript/tsconfig/tsconfig.json",
-  "compilerOptions": {
-    "jsx": "react"
-  }
+  "extends": "@roots/bud-typescript/tsconfig/tsconfig.json"
 }

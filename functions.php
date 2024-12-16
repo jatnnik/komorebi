@@ -55,6 +55,10 @@ if (! function_exists('\Roots\bootloader')) {
 */
 
 collect(['setup', 'filters'])
+    ->merge(collect(glob(__DIR__.'/app/customizations/*.php'))
+        ->map(function ($file) {
+            return 'customizations/'.basename($file, '.php');
+        }))
     ->each(function ($file) {
         if (! locate_template($file = "app/{$file}.php", true, true)) {
             wp_die(

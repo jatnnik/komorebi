@@ -1272,6 +1272,8 @@
     },
     "typography": {
       "customFontSize": false,
+      "dropCap": false,
+      "fontWeight": false,
       "fontFamilies": [
         {
           "fontFamily": "ui-sans-serif,system-ui,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
@@ -1356,6 +1358,10 @@
           "slug": "9xl"
         }
       ]
+    },
+    "layout": {
+      "contentSize": "90rem",
+      "wideSize": "92rem"
     }
   }
 }

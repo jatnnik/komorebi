@@ -1,0 +1,25 @@
+.block-editor-block-list__layout {
+  @apply font-sans leading-relaxed;
+}
+
+.block-editor-block-list__block {
+  @apply mx-auto;
+}
+
+.edit-post-visual-editor__post-title-wrapper,
+.editor-styles-wrapper
+  .is-layout-constrained
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
+.editor-styles-wrapper
+  .block-editor-block-list__layout.is-root-container
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  @apply mx-auto w-[90%];
+}
+
+.wp-block-post-title {
+  @apply font-sans font-semibold mb-4 text-lg;
+}
+
+.wp-block-post-title::before {
+  content: 'Titel: ';
+}

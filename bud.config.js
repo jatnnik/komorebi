@@ -72,6 +72,12 @@ export default async (app) => {
       },
       typography: {
         customFontSize: false,
+        dropCap: false,
+        fontWeight: false,
+      },
+      layout: {
+        contentSize: '90rem',
+        wideSize: '92rem',
       },
     })
     .useTailwindColors()

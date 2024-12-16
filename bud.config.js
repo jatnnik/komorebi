@@ -75,10 +75,6 @@ export default async (app) => {
         dropCap: false,
         fontWeight: false,
       },
-      layout: {
-        contentSize: '90rem',
-        wideSize: '92rem',
-      },
     })
     .useTailwindColors()
     .useTailwindFontFamily()

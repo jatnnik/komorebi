@@ -16,6 +16,6 @@ export function callback(settings: object, name: string) {
 
   return {
     ...settings,
-    styles: [{label: 'Outline', name: 'outline'}],
+    styles: [{ label: 'Outline', name: 'outline' }],
   }
 }

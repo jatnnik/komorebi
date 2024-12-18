@@ -3,6 +3,8 @@
  */
 // @ts-ignore
 roots.register.filters('@scripts/filters')
+// @ts-ignore
+roots.register.blocks('@scripts/blocks')
 
 /**
  * @see {@link https://webpack.js.org/api/hot-module-replacement/}

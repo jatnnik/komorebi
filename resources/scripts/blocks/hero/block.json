@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "komorebi/hero",
+  "version": "0.1.0",
+  "title": "Hero",
+  "category": "design",
+  "icon": "megaphone",
+  "description": "Adds a hero section.",
+  "example": {},
+  "supports": {
+    "align": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "komorebi"
+}

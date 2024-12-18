@@ -1,6 +1,8 @@
 {
   "extends": "@roots/bud-typescript/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "jsx": "react"
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node"
   }
 }

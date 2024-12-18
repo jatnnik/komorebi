@@ -79,9 +79,4 @@ export default async (app) => {
     .useTailwindColors()
     .useTailwindFontFamily()
     .useTailwindFontSize()
-
-  /**
-   * Enable type checking
-   */
-  app.typescript.typecheck.enable()
 }
